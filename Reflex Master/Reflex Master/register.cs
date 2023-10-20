@@ -60,6 +60,13 @@ namespace Reflex_Master
                     }
 
                     MessageBox.Show("Se ha registrado exitosamente. Puede iniciar sesión.");
+                    this.Visible = false;
+                    this.Enabled = false;
+                    if (this.ParentForm is Form1 myForm)
+                    {
+                        myForm.LoginVisible = true;
+                        myForm.LoginEnabled = true;
+                    }
                 }
             }
         }

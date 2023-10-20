@@ -71,3 +71,39 @@ C:\Users\48313053\RiderProjects\Reflex Master\Reflex Master\obj\Debug\Reflex_Mas
 C:\Users\48313053\RiderProjects\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.logins.resources
 C:\Users\48313053\RiderProjects\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.register.resources
 C:\Users\48313053\RiderProjects\Reflex Master\Reflex Master\obj\Debug\Reflex Master.csproj.CopyComplete
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\Reflex_Master.exe.config
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\Reflex_Master.pdb
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Asio.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Core.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Midi.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Wasapi.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.WinForms.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.WinMM.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\System.Security.AccessControl.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Asio.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Core.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Midi.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.Wasapi.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.WinForms.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\NAudio.WinMM.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\System.Security.AccessControl.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex Master.csproj.AssemblyReference.cache
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.config.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.credits.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.Form1.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.game.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.ingame.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.logins.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.Properties.Resources.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.register.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex Master.csproj.GenerateResource.cache
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex Master.csproj.CoreCompileInputs.cache
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex Master.csproj.CopyComplete
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.exe
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.pdb
