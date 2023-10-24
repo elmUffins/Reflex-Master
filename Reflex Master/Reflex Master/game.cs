@@ -12,7 +12,11 @@ namespace Reflex_Master
             InitializeComponent();
         }
 
-        
+        public string LabelText
+        {
+            get { return usernamelabel.Text; }
+            set { usernamelabel.Text = LabelText; }
+        }
         
         private void back_Click(object sender, EventArgs e)
         {

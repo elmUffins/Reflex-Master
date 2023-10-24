@@ -31,6 +31,12 @@ namespace Reflex_Master
             AudioHelper.InitializeClickSound("click.wav");
             AudioHelper.PlayMusic();
         }
+        
+        public string Troll
+        {
+            get { return Troll; }
+            set { game1.LabelText = "Usted jugará como: " + user; }
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {

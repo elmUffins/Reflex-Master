@@ -15,6 +15,7 @@ namespace Reflex_Master
         OleDbDataAdapter da;
         DataSet ds = new DataSet();	
         string query = "SELECT username, password FROM Users";
+        
         public logins()
         {
             InitializeComponent();

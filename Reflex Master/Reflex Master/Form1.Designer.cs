@@ -38,11 +38,11 @@
             this.exit = new System.Windows.Forms.Button();
             this.logins1 = new Reflex_Master.logins();
             this.credits1 = new Reflex_Master.credits();
-            this.game1 = new Reflex_Master.game();
             this.config1 = new Reflex_Master.config();
             this.ingame1 = new Reflex_Master.ingame();
             this.register1 = new Reflex_Master.register();
             this.logout1 = new Reflex_Master.logout();
+            this.game1 = new Reflex_Master.game();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,23 +136,13 @@
             this.credits1.TabIndex = 8;
             this.credits1.Visible = false;
             // 
-            // game1
-            // 
-            this.game1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("game1.BackgroundImage")));
-            this.game1.Enabled = false;
-            this.game1.Location = new System.Drawing.Point(1, 0);
-            this.game1.Name = "game1";
-            this.game1.Size = new System.Drawing.Size(1367, 747);
-            this.game1.TabIndex = 9;
-            this.game1.Visible = false;
-            // 
             // config1
             // 
             this.config1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("config1.BackgroundImage")));
             this.config1.Enabled = false;
-            this.config1.Location = new System.Drawing.Point(1, 0);
+            this.config1.Location = new System.Drawing.Point(0, 0);
             this.config1.Name = "config1";
-            this.config1.Size = new System.Drawing.Size(1367, 747);
+            this.config1.Size = new System.Drawing.Size(1368, 747);
             this.config1.TabIndex = 10;
             this.config1.Visible = false;
             // 
@@ -170,9 +160,9 @@
             // 
             this.register1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("register1.BackgroundImage")));
             this.register1.Enabled = false;
-            this.register1.Location = new System.Drawing.Point(2, 0);
+            this.register1.Location = new System.Drawing.Point(0, 0);
             this.register1.Name = "register1";
-            this.register1.Size = new System.Drawing.Size(1366, 747);
+            this.register1.Size = new System.Drawing.Size(1368, 747);
             this.register1.TabIndex = 12;
             this.register1.Visible = false;
             // 
@@ -180,11 +170,20 @@
             // 
             this.logout1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logout1.BackgroundImage")));
             this.logout1.Enabled = false;
-            this.logout1.Location = new System.Drawing.Point(1, 0);
+            this.logout1.Location = new System.Drawing.Point(0, 0);
             this.logout1.Name = "logout1";
-            this.logout1.Size = new System.Drawing.Size(1366, 747);
+            this.logout1.Size = new System.Drawing.Size(1367, 747);
             this.logout1.TabIndex = 13;
             this.logout1.Visible = false;
+            // 
+            // game1
+            // 
+            this.game1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("game1.BackgroundImage")));
+            this.game1.LabelText = "Usted jugará como:";
+            this.game1.Location = new System.Drawing.Point(2, 2);
+            this.game1.Name = "game1";
+            this.game1.Size = new System.Drawing.Size(1366, 746);
+            this.game1.TabIndex = 14;
             // 
             // Form1
             // 
@@ -192,11 +191,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.game1);
             this.Controls.Add(this.logout1);
             this.Controls.Add(this.register1);
             this.Controls.Add(this.ingame1);
             this.Controls.Add(this.config1);
-            this.Controls.Add(this.game1);
             this.Controls.Add(this.credits1);
             this.Controls.Add(this.logins1);
             this.Controls.Add(this.exit);
@@ -212,6 +211,8 @@
             this.ResumeLayout(false);
         }
 
+        private Reflex_Master.game game1;
+
         private Reflex_Master.logout logout1;
 
         private Reflex_Master.register register1;
@@ -219,8 +220,6 @@
         private Reflex_Master.ingame ingame1;
 
         private Reflex_Master.config config1;
-
-        private Reflex_Master.game game1;
 
         private Reflex_Master.credits credits1;
 

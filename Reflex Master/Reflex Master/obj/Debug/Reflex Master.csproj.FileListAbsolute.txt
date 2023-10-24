@@ -145,3 +145,4 @@ C:\Users\User\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Deb
 C:\Users\User\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.exe
 C:\Users\User\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.pdb
 C:\Users\User\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.logout.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.logout.resources
