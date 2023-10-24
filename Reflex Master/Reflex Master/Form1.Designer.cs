@@ -120,9 +120,9 @@
             // 
             this.logins1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logins1.BackgroundImage")));
             this.logins1.Enabled = false;
-            this.logins1.Location = new System.Drawing.Point(0, 35);
+            this.logins1.Location = new System.Drawing.Point(0, 42);
             this.logins1.Name = "logins1";
-            this.logins1.Size = new System.Drawing.Size(1187, 713);
+            this.logins1.Size = new System.Drawing.Size(1187, 706);
             this.logins1.TabIndex = 7;
             this.logins1.Visible = false;
             // 
@@ -178,12 +178,13 @@
             // 
             // usernamelabel
             // 
+            this.usernamelabel.AutoEllipsis = true;
             this.usernamelabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernamelabel.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamelabel.ForeColor = System.Drawing.Color.White;
-            this.usernamelabel.Location = new System.Drawing.Point(1220, 116);
+            this.usernamelabel.Location = new System.Drawing.Point(1237, 115);
             this.usernamelabel.Name = "usernamelabel";
-            this.usernamelabel.Size = new System.Drawing.Size(149, 28);
+            this.usernamelabel.Size = new System.Drawing.Size(105, 28);
             this.usernamelabel.TabIndex = 1;
             this.usernamelabel.Text = "Guest";
             this.usernamelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
