@@ -37,6 +37,7 @@ namespace Reflex_Master
             this.nivel2 = new System.Windows.Forms.Button();
             this.nivel3 = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.usernamelabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,11 +99,23 @@ namespace Reflex_Master
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // usernamelabel
+            // 
+            this.usernamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.usernamelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelabel.ForeColor = System.Drawing.Color.White;
+            this.usernamelabel.Location = new System.Drawing.Point(3, 727);
+            this.usernamelabel.Name = "usernamelabel";
+            this.usernamelabel.Size = new System.Drawing.Size(1364, 51);
+            this.usernamelabel.TabIndex = 12;
+            this.usernamelabel.Text = "Usted jugará como:";
+            // 
             // game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.usernamelabel);
             this.Controls.Add(this.back);
             this.Controls.Add(this.nivel3);
             this.Controls.Add(this.nivel2);
@@ -113,6 +126,8 @@ namespace Reflex_Master
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label usernamelabel;
 
         private System.Windows.Forms.Button back;
 

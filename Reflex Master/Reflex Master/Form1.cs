@@ -20,6 +20,10 @@ namespace Reflex_Master
         {
             InitializeComponent();
         }
+
+        public string user = "Invitado";
+
+        public bool loggedin = false;
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -30,9 +34,19 @@ namespace Reflex_Master
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AudioHelper.PlayClickSound();
-            logins1.Enabled = true;
-            logins1.Visible = true;
+            if (loggedin == false)
+            {
+                AudioHelper.PlayClickSound();
+                logins1.Enabled = true;
+                logins1.Visible = true;
+            }
+            else
+            {
+                AudioHelper.PlayClickSound();
+                logout1.Enabled = true;
+                logout1.Visible = true;
+            }
+            
         }
 
         private void credits_Click(object sender, EventArgs e)

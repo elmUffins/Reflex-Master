@@ -20,8 +20,6 @@ namespace Reflex_Master
             InitializeComponent();
         }
 
-        private bool loggedin = false;
-
 
         private void back_Click(object sender, EventArgs e)
         {
@@ -62,10 +60,15 @@ namespace Reflex_Master
 
                 if (count > 0)
                 {
-                    loggedin = true;
-                    MessageBox.Show("Se ha iniciado sesión exitosamente.");
-                    this.Enabled = false;
-                    this.Visible = false;
+                    if (this.ParentForm is Form1 myForm)
+                    {
+                        myForm.user = enteredUsername;
+                        myForm.loggedin = true;
+                        MessageBox.Show("Se ha iniciado sesión exitosamente.");
+                        this.Enabled = false;
+                        this.Visible = false;
+                    }
+                    
                 }
                 else
                 {

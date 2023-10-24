@@ -42,7 +42,7 @@
             this.config1 = new Reflex_Master.config();
             this.ingame1 = new Reflex_Master.ingame();
             this.register1 = new Reflex_Master.register();
-            this.usernamelabel = new System.Windows.Forms.Label();
+            this.logout1 = new Reflex_Master.logout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,9 +120,9 @@
             // 
             this.logins1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logins1.BackgroundImage")));
             this.logins1.Enabled = false;
-            this.logins1.Location = new System.Drawing.Point(0, 42);
+            this.logins1.Location = new System.Drawing.Point(0, 0);
             this.logins1.Name = "logins1";
-            this.logins1.Size = new System.Drawing.Size(1187, 706);
+            this.logins1.Size = new System.Drawing.Size(1368, 748);
             this.logins1.TabIndex = 7;
             this.logins1.Visible = false;
             // 
@@ -130,9 +130,9 @@
             // 
             this.credits1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credits1.BackgroundImage")));
             this.credits1.Enabled = false;
-            this.credits1.Location = new System.Drawing.Point(0, 90);
+            this.credits1.Location = new System.Drawing.Point(0, 0);
             this.credits1.Name = "credits1";
-            this.credits1.Size = new System.Drawing.Size(1187, 657);
+            this.credits1.Size = new System.Drawing.Size(1368, 747);
             this.credits1.TabIndex = 8;
             this.credits1.Visible = false;
             // 
@@ -140,9 +140,9 @@
             // 
             this.game1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("game1.BackgroundImage")));
             this.game1.Enabled = false;
-            this.game1.Location = new System.Drawing.Point(1, 115);
+            this.game1.Location = new System.Drawing.Point(1, 0);
             this.game1.Name = "game1";
-            this.game1.Size = new System.Drawing.Size(1177, 632);
+            this.game1.Size = new System.Drawing.Size(1367, 747);
             this.game1.TabIndex = 9;
             this.game1.Visible = false;
             // 
@@ -150,9 +150,9 @@
             // 
             this.config1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("config1.BackgroundImage")));
             this.config1.Enabled = false;
-            this.config1.Location = new System.Drawing.Point(1, 163);
+            this.config1.Location = new System.Drawing.Point(1, 0);
             this.config1.Name = "config1";
-            this.config1.Size = new System.Drawing.Size(1153, 584);
+            this.config1.Size = new System.Drawing.Size(1367, 747);
             this.config1.TabIndex = 10;
             this.config1.Visible = false;
             // 
@@ -160,9 +160,9 @@
             // 
             this.ingame1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ingame1.BackgroundImage")));
             this.ingame1.Enabled = false;
-            this.ingame1.Location = new System.Drawing.Point(0, 172);
+            this.ingame1.Location = new System.Drawing.Point(0, 0);
             this.ingame1.Name = "ingame1";
-            this.ingame1.Size = new System.Drawing.Size(1129, 576);
+            this.ingame1.Size = new System.Drawing.Size(1368, 748);
             this.ingame1.TabIndex = 11;
             this.ingame1.Visible = false;
             // 
@@ -170,24 +170,21 @@
             // 
             this.register1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("register1.BackgroundImage")));
             this.register1.Enabled = false;
-            this.register1.Location = new System.Drawing.Point(2, 172);
+            this.register1.Location = new System.Drawing.Point(2, 0);
             this.register1.Name = "register1";
-            this.register1.Size = new System.Drawing.Size(1110, 575);
+            this.register1.Size = new System.Drawing.Size(1366, 747);
             this.register1.TabIndex = 12;
             this.register1.Visible = false;
             // 
-            // usernamelabel
+            // logout1
             // 
-            this.usernamelabel.AutoEllipsis = true;
-            this.usernamelabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernamelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernamelabel.ForeColor = System.Drawing.Color.White;
-            this.usernamelabel.Location = new System.Drawing.Point(1237, 115);
-            this.usernamelabel.Name = "usernamelabel";
-            this.usernamelabel.Size = new System.Drawing.Size(105, 28);
-            this.usernamelabel.TabIndex = 1;
-            this.usernamelabel.Text = "Guest";
-            this.usernamelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.logout1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logout1.BackgroundImage")));
+            this.logout1.Enabled = false;
+            this.logout1.Location = new System.Drawing.Point(1, 0);
+            this.logout1.Name = "logout1";
+            this.logout1.Size = new System.Drawing.Size(1366, 747);
+            this.logout1.TabIndex = 13;
+            this.logout1.Visible = false;
             // 
             // Form1
             // 
@@ -195,7 +192,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.usernamelabel);
+            this.Controls.Add(this.logout1);
             this.Controls.Add(this.register1);
             this.Controls.Add(this.ingame1);
             this.Controls.Add(this.config1);
@@ -215,7 +212,7 @@
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.Label usernamelabel;
+        private Reflex_Master.logout logout1;
 
         private Reflex_Master.register register1;
 

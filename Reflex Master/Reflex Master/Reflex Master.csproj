@@ -118,6 +118,12 @@
     <Compile Include="logins.Designer.cs">
       <DependentUpon>logins.cs</DependentUpon>
     </Compile>
+    <Compile Include="logout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="logout.Designer.cs">
+      <DependentUpon>logout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.cs">
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="logins.resx">
       <DependentUpon>logins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logout.resx">
+      <DependentUpon>logout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
