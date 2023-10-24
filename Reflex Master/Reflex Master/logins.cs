@@ -65,6 +65,7 @@ namespace Reflex_Master
                     {
                         myForm.user = enteredUsername;
                         myForm.loggedin = true;
+                        myForm.UpdateGameLabel("Usted jugará como: " + enteredUsername);
                         MessageBox.Show("Se ha iniciado sesión exitosamente.");
                         this.Enabled = false;
                         this.Visible = false;

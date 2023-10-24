@@ -15,7 +15,7 @@ namespace Reflex_Master
         public string LabelText
         {
             get { return usernamelabel.Text; }
-            set { usernamelabel.Text = LabelText; }
+            set { usernamelabel.Text = value; }
         }
         
         private void back_Click(object sender, EventArgs e)

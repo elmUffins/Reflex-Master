@@ -19,6 +19,11 @@ namespace Reflex_Master
         public Form1()
         {
             InitializeComponent();
+            game1.LabelText = "Usted jugará como: " + user;
+        }
+        public void UpdateGameLabel(string labelText)
+        {
+            game1.LabelText = labelText;
         }
 
         public string user = "Invitado";
@@ -30,12 +35,6 @@ namespace Reflex_Master
             AudioHelper.InitializeMusic("menumusic.wav");
             AudioHelper.InitializeClickSound("click.wav");
             AudioHelper.PlayMusic();
-        }
-        
-        public string Troll
-        {
-            get { return Troll; }
-            set { game1.LabelText = "Usted jugará como: " + user; }
         }
 
         private void button4_Click(object sender, EventArgs e)
