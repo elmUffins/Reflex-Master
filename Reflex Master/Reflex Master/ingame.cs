@@ -6,6 +6,7 @@ namespace Reflex_Master
 {
     public partial class ingame : UserControl
     {
+        SerialPort serialPort;
         public ingame()
         {
             InitializeComponent();
@@ -13,7 +14,15 @@ namespace Reflex_Master
             {
                 if (myForm.gameon == true)
                 {
-                    serialPort1.Open();
+                    serialPort = new SerialPort("COM6", 9600);
+                    try
+                    {
+                        serialPort.Open();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No se ha podido establecer una conexión.");
+                    }
                 }
             }
             
