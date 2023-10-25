@@ -82,6 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AudioHelper.cs" />
+    <Compile Include="cambiarpass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cambiarpass.Designer.cs">
+      <DependentUpon>cambiarpass.cs</DependentUpon>
+    </Compile>
     <Compile Include="config.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cambiarpass.resx">
+      <DependentUpon>cambiarpass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="config.resx">
       <DependentUpon>config.cs</DependentUpon>
     </EmbeddedResource>
