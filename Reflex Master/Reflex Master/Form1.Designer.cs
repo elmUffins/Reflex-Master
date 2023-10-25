@@ -181,9 +181,9 @@
             this.game1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("game1.BackgroundImage")));
             this.game1.Enabled = false;
             this.game1.LabelText = "Usted jugará como:";
-            this.game1.Location = new System.Drawing.Point(2, 1);
+            this.game1.Location = new System.Drawing.Point(2, 0);
             this.game1.Name = "game1";
-            this.game1.Size = new System.Drawing.Size(1365, 746);
+            this.game1.Size = new System.Drawing.Size(1366, 748);
             this.game1.TabIndex = 14;
             this.game1.Visible = false;
             // 
