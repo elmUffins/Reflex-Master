@@ -32,6 +32,7 @@ namespace Reflex_Master
             this.Visible = false;
             if (this.ParentForm is Form1 myForm)
             {
+                myForm.gameon = true;
                 myForm.IngameEnabled = true;
                 myForm.IngameVisible = true;
             }
@@ -44,6 +45,7 @@ namespace Reflex_Master
             this.Visible = false;
             if (this.ParentForm is Form1 myForm)
             {
+                myForm.gameon = true;
                 myForm.IngameEnabled = true;
                 myForm.IngameVisible = true;
             }
@@ -56,6 +58,7 @@ namespace Reflex_Master
             this.Visible = false;
             if (this.ParentForm is Form1 myForm)
             {
+                myForm.gameon = true;
                 myForm.IngameEnabled = true;
                 myForm.IngameVisible = true;
             }

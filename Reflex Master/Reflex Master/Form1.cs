@@ -26,6 +26,8 @@ namespace Reflex_Master
             game1.LabelText = labelText;
         }
 
+        public bool gameon = false;
+
         public string user = "Invitado";
 
         public bool loggedin = false;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.IO.Ports;
 
 namespace Reflex_Master
 {
@@ -8,6 +9,14 @@ namespace Reflex_Master
         public ingame()
         {
             InitializeComponent();
+            if (this.ParentForm is Form1 myForm)
+            {
+                if (myForm.gameon == true)
+                {
+                    serialPort1.Open();
+                }
+            }
+            
         }
 
 
@@ -18,6 +27,7 @@ namespace Reflex_Master
             this.Visible = false;
             if (this.ParentForm is Form1 myForm)
             {
+                myForm.gameon = false;
                 myForm.GameEnabled = true;
                 myForm.GameVisible = true;
             }
