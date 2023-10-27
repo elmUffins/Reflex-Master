@@ -44,7 +44,7 @@ namespace Reflex_Master
                     {
                         updateCommand.Parameters.AddWithValue("@username", enteredUsername);
                         updateCommand.Parameters.AddWithValue("@newPassword", newPassword);
-
+                        
                         int rowsUpdated = updateCommand.ExecuteNonQuery();
 
                         if (rowsUpdated > 0)
