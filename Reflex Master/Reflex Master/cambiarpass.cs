@@ -29,18 +29,48 @@ namespace Reflex_Master
         using (OleDbConnection connection = new OleDbConnection(connectionString))
         {
             connection.Open();
-            string selectQuery = "SELECT COUNT(*) FROM [Users] WHERE [username] = @username AND [password] = @password";
+            string selectQuery = "SELECT * FROM [Users] WHERE [username] = @username AND [password] = @password";
             using (OleDbCommand selectCommand = new OleDbCommand(selectQuery, connection))
             {
                 selectCommand.Parameters.AddWithValue("@username", enteredUsername);
                 selectCommand.Parameters.AddWithValue("@password", enteredPassword);
 
                 int count = (int)selectCommand.ExecuteScalar();
-
+                
                 if (count > 0)
                 {
-                    string updateQuery = "UPDATE [Users] SET [password] = @newPassword WHERE [username] = @username";
-                    using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
+                    try
+                    {
+                        string updateQuery = "UPDATE [Users] SET [password] = '" + newPassword +
+                                             "' WHERE [username] = '" + enteredUsername + "'";
+                        OleDbCommand cmd = new OleDbCommand(updateQuery, connection);
+                        int rowsUpdated = cmd.ExecuteNonQuery();
+                        
+                        if (rowsUpdated > 0)
+                        {
+                            MessageBox.Show("La contraseña ha sido cambiada exitosamente.");
+                            this.Enabled = false;
+                            this.Visible = false;
+                            if (this.ParentForm is Form1 myForm)
+                            {
+                                myForm.loggedin = false;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show(Convert.ToString(rowsUpdated));
+                            MessageBox.Show(enteredUsername);
+                            MessageBox.Show(enteredPassword);
+                            MessageBox.Show(newPassword);
+                            MessageBox.Show("No se pudo cambiar la contraseña. Por favor, inténtelo de nuevo.");
+                        }
+
+                    }
+                    catch (Exception exp)
+                    {
+                        MessageBox.Show((exp.ToString()));
+                    }
+                        /*using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
                     {
                         updateCommand.Parameters.AddWithValue("@username", enteredUsername);
                         updateCommand.Parameters.AddWithValue("@newPassword", newPassword);
@@ -59,12 +89,13 @@ namespace Reflex_Master
                         }
                         else
                         {
+                            MessageBox.Show(Convert.ToString(rowsUpdated));
                             MessageBox.Show(enteredUsername);
                             MessageBox.Show(enteredPassword);
                             MessageBox.Show(newPassword);
                             MessageBox.Show("No se pudo cambiar la contraseña. Por favor, inténtelo de nuevo.");
                         }
-                    }
+                    }*/
                 }
                 else
                 {
