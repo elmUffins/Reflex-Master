@@ -10,13 +10,6 @@ namespace Reflex_Master
         public game()
         {
             InitializeComponent();
-            if (this.ParentForm is Form1 myForm)
-            {
-                if (myForm.loggedin == false)
-                {
-                    LabelText = "Usted jugará como: " + myForm.user;
-                }
-            }
         }
 
         public string LabelText
@@ -70,5 +63,7 @@ namespace Reflex_Master
                 myForm.IngameVisible = true;
             }
         }
+
+        
     }
 }

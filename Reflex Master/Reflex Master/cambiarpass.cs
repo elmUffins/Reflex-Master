@@ -70,32 +70,7 @@ namespace Reflex_Master
                     {
                         MessageBox.Show((exp.ToString()));
                     }
-                        /*using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
-                    {
-                        updateCommand.Parameters.AddWithValue("@username", enteredUsername);
-                        updateCommand.Parameters.AddWithValue("@newPassword", newPassword);
-                        
-                        int rowsUpdated = updateCommand.ExecuteNonQuery();
 
-                        if (rowsUpdated > 0)
-                        {
-                            MessageBox.Show("La contraseña ha sido cambiada exitosamente.");
-                            this.Enabled = false;
-                            this.Visible = false;
-                            if (this.ParentForm is Form1 myForm)
-                            {
-                                myForm.loggedin = false;
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show(Convert.ToString(rowsUpdated));
-                            MessageBox.Show(enteredUsername);
-                            MessageBox.Show(enteredPassword);
-                            MessageBox.Show(newPassword);
-                            MessageBox.Show("No se pudo cambiar la contraseña. Por favor, inténtelo de nuevo.");
-                        }
-                    }*/
                 }
                 else
                 {

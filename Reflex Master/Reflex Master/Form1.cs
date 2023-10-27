@@ -81,6 +81,10 @@ namespace Reflex_Master
             AudioHelper.PlayClickSound();
             game1.Enabled = true;
             game1.Visible = true;
+            if (game1.Enabled == true && loggedin == false)
+            {
+                game1.LabelText = "Usted jugará como: Invitado";
+            }
         }
 
         public void SetMusicVolume(float volume)
