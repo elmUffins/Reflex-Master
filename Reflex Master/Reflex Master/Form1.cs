@@ -141,6 +141,20 @@ namespace Reflex_Master
             set => logins1.Visible = value;
         }
 
+        public bool ChangepassVisible
+        {
+            get => cambiarpass1.Visible;
+            set => cambiarpass1.Visible = value;
+        }
+        
+        public bool ChangepassEnabled
+        {
+            get => cambiarpass1.Enabled;
+            set => cambiarpass1.Enabled = value;
+        }
+
+        
+
         
     }
 }

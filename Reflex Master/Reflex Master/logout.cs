@@ -27,5 +27,17 @@ namespace Reflex_Master
                 this.Visible = false;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AudioHelper.PlayClickSound();
+            this.Enabled = false;
+            this.Visible = false;
+            if (this.ParentForm is Form1 myForm)
+            {
+                myForm.ChangepassEnabled = true;
+                myForm.ChangepassVisible = true;
+            }
+        }
     }
 }

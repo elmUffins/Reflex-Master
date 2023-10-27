@@ -43,6 +43,7 @@
             this.register1 = new Reflex_Master.register();
             this.logout1 = new Reflex_Master.logout();
             this.game1 = new Reflex_Master.game();
+            this.cambiarpass1 = new Reflex_Master.cambiarpass();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,12 +188,23 @@
             this.game1.TabIndex = 14;
             this.game1.Visible = false;
             // 
+            // cambiarpass1
+            // 
+            this.cambiarpass1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cambiarpass1.BackgroundImage")));
+            this.cambiarpass1.Enabled = false;
+            this.cambiarpass1.Location = new System.Drawing.Point(0, 1);
+            this.cambiarpass1.Name = "cambiarpass1";
+            this.cambiarpass1.Size = new System.Drawing.Size(1367, 746);
+            this.cambiarpass1.TabIndex = 15;
+            this.cambiarpass1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.cambiarpass1);
             this.Controls.Add(this.game1);
             this.Controls.Add(this.logout1);
             this.Controls.Add(this.register1);
@@ -212,6 +224,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private Reflex_Master.cambiarpass cambiarpass1;
 
         private Reflex_Master.game game1;
 
