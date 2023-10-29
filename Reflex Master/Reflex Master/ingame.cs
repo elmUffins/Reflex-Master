@@ -7,47 +7,41 @@ namespace Reflex_Master
     public partial class ingame : UserControl
     {
         SerialPort serialPort;
-        int receivedDataCount = 0;
+        Label[] labels; // Array to hold your labels
+
+        int receivedCount = 0;
+        double finaltime = 0;
+
         public ingame()
         {
             InitializeComponent();
-            if (this.ParentForm is Form1 myForm)
+
+            // Initialize your labels array
+            labels = new Label[10];
+            labels[0] = label1;
+            labels[1] = label2;
+            labels[2] = label3;
+            labels[3] = label4;
+            labels[4] = label5;
+            labels[5] = label6;
+            labels[6] = label7;
+            labels[7] = label8;
+            labels[8] = label9;
+            labels[9] = label10;
+
+
+            serialPort = new SerialPort("COM6", 9600);
+            try
             {
-                if (myForm.gameon == true)
-                {
-                    serialPort = new SerialPort("COM6", 9600);
-                    serialPort.DataReceived += SerialPort_DataReceived; // Add event handler
-                    try
-                    {
-                        serialPort.Open();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("No se ha podido establecer una conexión.");
-                    }
-                }
+                serialPort.Open();
+                serialPort.DataReceived += SerialPortDataReceived;
+                serialPort.ErrorReceived += SerialPortErrorReceived;
             }
-        }
-        private void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
-        {
-            // Assuming the Arduino sends data as comma-separated values
-            string data = serialPort.ReadLine(); // Read a line of data
-
-            if (!string.IsNullOrEmpty(data))
+            catch
             {
-                // Split the received data by commas
-                string[] values = data.Split(',');
-
-                if (values.Length == 10 && receivedDataCount < 10)
-                {
-                    // Display the received numbers in labels
-                    // this.Invoke(new Action(() => label1.Text = values[0]));
-                    // this.Invoke(new Action(() => label2.Text = values[1]));
-                    // Repeat for label3, label4, ..., label10
-
-                    receivedDataCount++;
-                }
+                MessageBox.Show("No se ha podido establecer una conexión.");
             }
+            
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -57,10 +51,40 @@ namespace Reflex_Master
             this.Visible = false;
             if (this.ParentForm is Form1 myForm)
             {
-                myForm.gameon = false;
                 myForm.GameEnabled = true;
                 myForm.GameVisible = true;
+                CloseSerialPort();
             }
+        }
+
+        private void CloseSerialPort()
+        {
+            if (serialPort != null && serialPort.IsOpen)
+            {
+                serialPort.Close();
+            }
+        }
+
+        private void SerialPortDataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            string data = serialPort.ReadLine();
+            if (receivedCount < 10)
+            {
+                this.Invoke(new Action(() => labels[receivedCount].Text = data));
+                receivedCount++;
+                finaltime += Convert.ToDouble(data);
+            }
+            else
+            {
+                CloseSerialPort();
+                MessageBox.Show("Su tiempo final es de: " + finaltime + ".");
+            }
+        }
+
+        private void SerialPortErrorReceived(object sender, SerialErrorReceivedEventArgs e)
+        {
+            // Handle errors (e.g., display an error message)
+            MessageBox.Show("Error en la comunicación serie: " + e.EventType);
         }
     }
 }
