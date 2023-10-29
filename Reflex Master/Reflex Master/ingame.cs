@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Data.OleDb;
 
 namespace Reflex_Master
 {
     public partial class ingame : UserControl
     {
+        static string connectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source=Users.accdb;";
         SerialPort serialPort;
-        Label[] labels; // Array to hold your labels
+        Label[] labels;
 
         int receivedCount = 0;
         double finaltime = 0;
@@ -16,7 +18,6 @@ namespace Reflex_Master
         {
             InitializeComponent();
 
-            // Initialize your labels array
             labels = new Label[10];
             labels[0] = label1;
             labels[1] = label2;
@@ -29,7 +30,6 @@ namespace Reflex_Master
             labels[8] = label9;
             labels[9] = label10;
 
-
             serialPort = new SerialPort("COM6", 9600);
             try
             {
@@ -41,7 +41,6 @@ namespace Reflex_Master
             {
                 MessageBox.Show("No se ha podido establecer una conexión.");
             }
-            
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -78,12 +77,44 @@ namespace Reflex_Master
             {
                 CloseSerialPort();
                 MessageBox.Show("Su tiempo final es de: " + finaltime + ".");
+
+                if (finaltime > 0)
+                {
+                    if (this.ParentForm is Form1 myForm && myForm.loggedin)
+                    {
+                        double besttime = 0;
+                        using (OleDbConnection connection = new OleDbConnection(connectionString))
+                        {
+                            connection.Open();
+                            string selectQuery = "SELECT besttime FROM Users WHERE username = @username";
+                            using (OleDbCommand selectCommand = new OleDbCommand(selectQuery, connection))
+                            {
+                                selectCommand.Parameters.AddWithValue("@username", myForm.user);
+                                besttime = Convert.ToDouble(selectCommand.ExecuteScalar());
+                            }
+                        }
+
+                        if (finaltime < besttime || besttime == 0)
+                        {
+                            using (OleDbConnection connection = new OleDbConnection(connectionString))
+                            {
+                                connection.Open();
+                                string updateQuery = "UPDATE Users SET besttime = @besttime WHERE username = @username";
+                                using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
+                                {
+                                    updateCommand.Parameters.AddWithValue("@username", myForm.user);
+                                    updateCommand.Parameters.AddWithValue("@besttime", finaltime);
+                                    updateCommand.ExecuteNonQuery();
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
         private void SerialPortErrorReceived(object sender, SerialErrorReceivedEventArgs e)
         {
-            // Handle errors (e.g., display an error message)
             MessageBox.Show("Error en la comunicación serie: " + e.EventType);
         }
     }
