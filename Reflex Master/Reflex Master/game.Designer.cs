@@ -34,9 +34,7 @@ namespace Reflex_Master
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(game));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.nivel1 = new System.Windows.Forms.Button();
             this.nivel2 = new System.Windows.Forms.Button();
-            this.nivel3 = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.usernamelabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,18 +50,6 @@ namespace Reflex_Master
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // nivel1
-            // 
-            this.nivel1.BackColor = System.Drawing.Color.Transparent;
-            this.nivel1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.nivel1.Image = ((System.Drawing.Image)(resources.GetObject("nivel1.Image")));
-            this.nivel1.Location = new System.Drawing.Point(121, 400);
-            this.nivel1.Name = "nivel1";
-            this.nivel1.Size = new System.Drawing.Size(296, 126);
-            this.nivel1.TabIndex = 1;
-            this.nivel1.UseVisualStyleBackColor = false;
-            this.nivel1.Click += new System.EventHandler(this.nivel1_Click);
-            // 
             // nivel2
             // 
             this.nivel2.BackColor = System.Drawing.Color.Transparent;
@@ -75,18 +61,6 @@ namespace Reflex_Master
             this.nivel2.TabIndex = 2;
             this.nivel2.UseVisualStyleBackColor = false;
             this.nivel2.Click += new System.EventHandler(this.nivel2_Click);
-            // 
-            // nivel3
-            // 
-            this.nivel3.BackColor = System.Drawing.Color.Transparent;
-            this.nivel3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.nivel3.Image = ((System.Drawing.Image)(resources.GetObject("nivel3.Image")));
-            this.nivel3.Location = new System.Drawing.Point(969, 400);
-            this.nivel3.Name = "nivel3";
-            this.nivel3.Size = new System.Drawing.Size(296, 126);
-            this.nivel3.TabIndex = 3;
-            this.nivel3.UseVisualStyleBackColor = false;
-            this.nivel3.Click += new System.EventHandler(this.nivel3_Click);
             // 
             // back
             // 
@@ -118,9 +92,7 @@ namespace Reflex_Master
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.usernamelabel);
             this.Controls.Add(this.back);
-            this.Controls.Add(this.nivel3);
             this.Controls.Add(this.nivel2);
-            this.Controls.Add(this.nivel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "game";
             this.Size = new System.Drawing.Size(1386, 788);
@@ -133,9 +105,6 @@ namespace Reflex_Master
         private System.Windows.Forms.Button back;
 
         private System.Windows.Forms.Button nivel2;
-        private System.Windows.Forms.Button nivel3;
-
-        private System.Windows.Forms.Button nivel1;
 
         private System.Windows.Forms.PictureBox pictureBox1;
 

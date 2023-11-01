@@ -25,18 +25,6 @@ namespace Reflex_Master
             this.Visible = false;
         }
 
-        private void nivel1_Click(object sender, EventArgs e)
-        {
-            AudioHelper.PlayClickSound();
-            this.Enabled = false;
-            this.Visible = false;
-            if (this.ParentForm is Form1 myForm)
-            {
-                myForm.IngameEnabled = true;
-                myForm.IngameVisible = true;
-            }
-        }
-
         private void nivel2_Click(object sender, EventArgs e)
         {
             AudioHelper.PlayClickSound();
@@ -49,17 +37,7 @@ namespace Reflex_Master
             }
         }
 
-        private void nivel3_Click(object sender, EventArgs e)
-        {
-            AudioHelper.PlayClickSound();
-            this.Enabled = false;
-            this.Visible = false;
-            if (this.ParentForm is Form1 myForm)
-            {
-                myForm.IngameEnabled = true;
-                myForm.IngameVisible = true;
-            }
-        }
+        
 
         
     }
