@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Data.OleDb;
-using System.Net.Http;
 
 namespace Reflex_Master
 {
@@ -11,7 +10,6 @@ namespace Reflex_Master
         static string connectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source=Users.accdb;";
         SerialPort serialPort;
         Label[] labels;
-
         int receivedCount = 0;
         double finaltime = 0;
 
@@ -30,20 +28,6 @@ namespace Reflex_Master
             labels[7] = label8;
             labels[8] = label9;
             labels[9] = label10;
-            
-            serialPort = new SerialPort("COM6", 9600);
-            try
-            {
-                serialPort.Open();
-                serialPort.DataReceived += SerialPortDataReceived;
-                serialPort.ErrorReceived += SerialPortErrorReceived;
-            }
-            catch
-            {
-                MessageBox.Show("No se ha podido establecer una conexión.");
-            }
-            
-            
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -119,6 +103,29 @@ namespace Reflex_Master
         private void SerialPortErrorReceived(object sender, SerialErrorReceivedEventArgs e)
         {
             MessageBox.Show("Error en la comunicación serie: " + e.EventType);
+        }
+
+        protected override void OnVisibleChanged(EventArgs e)
+        {
+            base.OnVisibleChanged(e);
+            if (Visible)
+            {
+                serialPort = new SerialPort("COM6", 9600);
+                try
+                {
+                    serialPort.Open();
+                    serialPort.DataReceived += SerialPortDataReceived;
+                    serialPort.ErrorReceived += SerialPortErrorReceived;
+                }
+                catch
+                {
+                    MessageBox.Show("No se ha podido establecer una conexión.");
+                }
+            }
+            else
+            {
+                CloseSerialPort();
+            }
         }
     }
 }
