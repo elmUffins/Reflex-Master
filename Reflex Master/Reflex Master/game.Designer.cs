@@ -45,9 +45,9 @@ namespace Reflex_Master
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(440, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(297, 100);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(559, 148);
+            this.pictureBox1.Size = new System.Drawing.Size(792, 120);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -56,9 +56,9 @@ namespace Reflex_Master
             this.nivel2.BackColor = System.Drawing.Color.Transparent;
             this.nivel2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nivel2.Image = ((System.Drawing.Image)(resources.GetObject("nivel2.Image")));
-            this.nivel2.Location = new System.Drawing.Point(545, 400);
+            this.nivel2.Location = new System.Drawing.Point(482, 360);
             this.nivel2.Name = "nivel2";
-            this.nivel2.Size = new System.Drawing.Size(296, 126);
+            this.nivel2.Size = new System.Drawing.Size(422, 140);
             this.nivel2.TabIndex = 2;
             this.nivel2.UseVisualStyleBackColor = false;
             this.nivel2.Click += new System.EventHandler(this.nivel2_Click);
@@ -91,7 +91,7 @@ namespace Reflex_Master
             this.besttimelbl.BackColor = System.Drawing.SystemColors.Control;
             this.besttimelbl.Enabled = false;
             this.besttimelbl.Font = new System.Drawing.Font("Book Antiqua", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.besttimelbl.Location = new System.Drawing.Point(668, 463);
+            this.besttimelbl.Location = new System.Drawing.Point(615, 425);
             this.besttimelbl.Name = "besttimelbl";
             this.besttimelbl.Size = new System.Drawing.Size(157, 54);
             this.besttimelbl.TabIndex = 13;

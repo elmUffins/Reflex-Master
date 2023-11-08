@@ -16,7 +16,8 @@ namespace Reflex_Master
         {
             InitializeComponent();
             besttimelbl.BackColor = Color.FromArgb(255, 199, 211, 236);
-            
+            besttimelbl.ForeColor = Color.FromArgb(255, 0, 0, 0);
+
         }
 
         public string LabelText
