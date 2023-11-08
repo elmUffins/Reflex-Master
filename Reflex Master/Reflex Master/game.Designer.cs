@@ -37,6 +37,7 @@ namespace Reflex_Master
             this.nivel2 = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.usernamelabel = new System.Windows.Forms.Label();
+            this.besttimelbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +86,22 @@ namespace Reflex_Master
             this.usernamelabel.TabIndex = 12;
             this.usernamelabel.Text = "Usted jugará como:";
             // 
+            // besttimelbl
+            // 
+            this.besttimelbl.BackColor = System.Drawing.SystemColors.Control;
+            this.besttimelbl.Enabled = false;
+            this.besttimelbl.Font = new System.Drawing.Font("Book Antiqua", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.besttimelbl.Location = new System.Drawing.Point(668, 463);
+            this.besttimelbl.Name = "besttimelbl";
+            this.besttimelbl.Size = new System.Drawing.Size(157, 54);
+            this.besttimelbl.TabIndex = 13;
+            // 
             // game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.besttimelbl);
             this.Controls.Add(this.usernamelabel);
             this.Controls.Add(this.back);
             this.Controls.Add(this.nivel2);
@@ -99,6 +111,8 @@ namespace Reflex_Master
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label besttimelbl;
 
         private System.Windows.Forms.Label usernamelabel;
 

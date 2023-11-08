@@ -20,11 +20,14 @@ namespace Reflex_Master
         {
             InitializeComponent();
             game1.LabelText = "Usted jugará como: " + user;
+            
         }
         public void UpdateGameLabel(string labelText)
         {
             game1.LabelText = labelText;
         }
+        
+        
 
         
 
@@ -81,10 +84,13 @@ namespace Reflex_Master
             AudioHelper.PlayClickSound();
             game1.Enabled = true;
             game1.Visible = true;
+            game1.DisplayBestTime();
             if (game1.Enabled == true && loggedin == false)
             {
                 game1.LabelText = "Usted jugará como: Invitado";
+                game1.BestText = "No hay";
             }
+            
         }
 
         public void SetMusicVolume(float volume)
