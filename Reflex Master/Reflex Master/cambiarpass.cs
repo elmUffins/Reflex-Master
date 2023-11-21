@@ -86,6 +86,11 @@ namespace Reflex_Master
             AudioHelper.PlayClickSound();
             this.Enabled = false;
             this.Visible = false;
+            if (this.ParentForm is Form1 myForm)
+            {
+                myForm.LogoutEnabled = true;
+                myForm.LogoutVisible = true;
+            }
         }
     }
 }

@@ -163,7 +163,17 @@ namespace Reflex_Master
             set => cambiarpass1.Enabled = value;
         }
 
+        public bool LogoutVisible
+        {
+            get => logout1.Visible;
+            set => logout1.Visible = value;
+        }
         
+        public bool LogoutEnabled
+        {
+            get => logout1.Enabled;
+            set => logout1.Enabled = value;
+        }
 
         
     }
