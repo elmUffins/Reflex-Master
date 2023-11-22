@@ -44,6 +44,7 @@
             this.logout1 = new Reflex_Master.logout();
             this.game1 = new Reflex_Master.game();
             this.cambiarpass1 = new Reflex_Master.cambiarpass();
+            this.howto1 = new Reflex_Master.howto();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,6 +181,7 @@
             // game1
             // 
             this.game1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("game1.BackgroundImage")));
+            this.game1.BestText = "";
             this.game1.Enabled = false;
             this.game1.LabelText = "Usted jugará como:";
             this.game1.Location = new System.Drawing.Point(2, 0);
@@ -198,12 +200,23 @@
             this.cambiarpass1.TabIndex = 15;
             this.cambiarpass1.Visible = false;
             // 
+            // howto1
+            // 
+            this.howto1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("howto1.BackgroundImage")));
+            this.howto1.Enabled = false;
+            this.howto1.Location = new System.Drawing.Point(1, 1);
+            this.howto1.Name = "howto1";
+            this.howto1.Size = new System.Drawing.Size(1367, 747);
+            this.howto1.TabIndex = 16;
+            this.howto1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.howto1);
             this.Controls.Add(this.cambiarpass1);
             this.Controls.Add(this.game1);
             this.Controls.Add(this.logout1);
@@ -224,6 +237,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private Reflex_Master.howto howto1;
 
         private Reflex_Master.cambiarpass cambiarpass1;
 

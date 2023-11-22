@@ -38,6 +38,7 @@ namespace Reflex_Master
             this.back = new System.Windows.Forms.Button();
             this.usernamelabel = new System.Windows.Forms.Label();
             this.besttimelbl = new System.Windows.Forms.Label();
+            this.help = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,11 +97,24 @@ namespace Reflex_Master
             this.besttimelbl.Size = new System.Drawing.Size(157, 54);
             this.besttimelbl.TabIndex = 13;
             // 
+            // help
+            // 
+            this.help.BackColor = System.Drawing.Color.Transparent;
+            this.help.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.help.Image = ((System.Drawing.Image)(resources.GetObject("help.Image")));
+            this.help.Location = new System.Drawing.Point(1259, 19);
+            this.help.Name = "help";
+            this.help.Size = new System.Drawing.Size(105, 105);
+            this.help.TabIndex = 14;
+            this.help.UseVisualStyleBackColor = false;
+            this.help.Click += new System.EventHandler(this.help_Click);
+            // 
             // game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.help);
             this.Controls.Add(this.besttimelbl);
             this.Controls.Add(this.usernamelabel);
             this.Controls.Add(this.back);
@@ -111,6 +125,8 @@ namespace Reflex_Master
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button help;
 
         private System.Windows.Forms.Label besttimelbl;
 

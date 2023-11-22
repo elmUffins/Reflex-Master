@@ -79,6 +79,19 @@ namespace Reflex_Master
                 myForm.IngameVisible = true;
             }
         }
+
+
+        private void help_Click(object sender, EventArgs e)
+        {
+            AudioHelper.PlayClickSound();
+            this.Enabled = false;
+            this.Visible = false;
+            if (this.ParentForm is Form1 myForm)
+            {
+                myForm.HowtoEnabled = true;
+                myForm.HowtoVisible = true;
+            }
+        }
     }
 }
 

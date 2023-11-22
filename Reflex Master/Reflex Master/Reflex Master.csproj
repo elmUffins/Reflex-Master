@@ -112,6 +112,12 @@
     <Compile Include="game.Designer.cs">
       <DependentUpon>game.cs</DependentUpon>
     </Compile>
+    <Compile Include="howto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="howto.Designer.cs">
+      <DependentUpon>howto.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingame.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="game.resx">
       <DependentUpon>game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="howto.resx">
+      <DependentUpon>howto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingame.resx">
       <DependentUpon>ingame.cs</DependentUpon>

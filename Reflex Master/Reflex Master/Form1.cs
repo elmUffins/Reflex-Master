@@ -175,6 +175,16 @@ namespace Reflex_Master
             set => logout1.Enabled = value;
         }
 
+        public bool HowtoVisible
+        {
+            get => howto1.Visible;
+            set => howto1.Visible = value;
+        }
         
+        public bool HowtoEnabled
+        {
+            get => howto1.Enabled;
+            set => howto1.Enabled = value;
+        }
     }
 }

@@ -148,3 +148,4 @@ C:\Users\User\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Deb
 C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.logout.resources
 C:\Users\User\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.cambiarpass.resources
 C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.cambiarpass.resources
+C:\Users\48313053\Documents\GitHub\Reflex-Master\Reflex Master\Reflex Master\obj\Debug\Reflex_Master.howto.resources
