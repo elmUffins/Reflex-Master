@@ -54,7 +54,7 @@ namespace Reflex_Master
         private void SerialPortDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             string data = serialPort.ReadLine();
-            if (receivedCount < 10 && Convert.ToDouble(data) > 6)
+            if (receivedCount < 9)
             {
                 this.Invoke(new Action(() => labels[receivedCount].Text = data));
                 receivedCount++;
@@ -110,7 +110,7 @@ namespace Reflex_Master
             base.OnVisibleChanged(e);
             if (Visible)
             {
-                serialPort = new SerialPort("COM6", 9600);
+                serialPort = new SerialPort("COM4", 9600);
                 try
                 {
                     serialPort.Open();
