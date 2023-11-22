@@ -54,7 +54,7 @@ namespace Reflex_Master
         private void SerialPortDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             string data = serialPort.ReadLine();
-            if (receivedCount < 10)
+            if (receivedCount < 10 && Convert.ToDouble(data) > 6)
             {
                 this.Invoke(new Action(() => labels[receivedCount].Text = data));
                 receivedCount++;
